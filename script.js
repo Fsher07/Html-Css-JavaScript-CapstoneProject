@@ -1,10 +1,12 @@
 // Menubar icon
-const menuBar = document.querySelectorAll('.menu-bar');
-function changeMenuBarIcon() {
-  for (let i = 0; i < menuBar.length; i += 1) {
-    menuBar[i].classList.toggle('change');
-  }
-}
+const menuBar = document.querySelector('.menu-bar');3
+const mobileMenu = document.querySelector('.mobile-menu');
+menuBar.addEventListener('click', () => {
+  menuBar.classList.toggle('change');
+  mobileMenu.classList.toggle('show');
+});
+
+  
 
 // Guests
 const guests = [
