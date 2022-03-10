@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href=" ./aboutmobile.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./style.css" />
   <script src="https://kit.fontawesome.com/686039ca8a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,7 +27,7 @@
         <h2>Let's Shred Together</h2>
       </a>
       <ul class="top-nav-ul">
-        <li><a class="colorOrange" href="#">About</a></li>
+        <li><a class="colorOrange" href="about.html">About</a></li>
         <li><a class="colorMain" href="#">Program</a></li>
         <li><a class="colorMain" href="#">Join</a></li>
         <li><a class="colorMain" href="#">Sponsor</a></li>
@@ -35,55 +37,105 @@
     </div>
   </header>
   <main class="main">
-    <section class="intro">
+    <section class="intro-about">
         <div class="menu-bar">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
         <div class="mobile-menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
           <a href="#">Main Program</a>
           <a href="#">Guests</a>
         </div>
-      <h1 id="intro-title">THE "BIGGEST" BODYBUILDING CONFERENCE IN HISTORY</h1>
-      <div id="intro-paragraph">
+      <h3 class="colorOrange intro-small-title about-intro-small-title">"Hello Gym Mates!"</h3>
+      <h1>THE "BIGGEST" BODYBUILDING CONFERENCE IN HISTORY</h1>
+      <hr class="about-hr">
+      <div class="intro-paragraph-about">
         <p class="colorMain">Most succesful athletes of bodybuilding sector in one meeting. There will be exclusive interview what you won't anywhere else.
-          Special events, giveaways, and more await you.
+          Special events, giveaways, and more await you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis enim quis accusamus impedit illum quidem voluptate quaerat iste iure dolorem officiis culpa labore, temporibus ipsa ipsum, quos nihil consequatur.
+        </p>
       </div>
-      </p>
       <h2 class="colorMain">Please contact us per email for any further questions about The "Biggest" bodybuilding feast.</h2>
-      <h3 class="colorMain">biggestfeast@bbfeast.com ></h3>
-    </div>
+      <h3 id="mail" class="colorMain">biggestfeast@bbfeast.com ></h3>
     </section>
     <section class="logo">
-      <h2>The "BIGGEST" Bodybuilding Conference Logo</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error fuga dignissimos blanditiis, sint iste quibusdam eveniet dolores provident veniam harum quia id nobis cupiditate illum voluptatibus adipisci. Deleniti, consequatur?</p>
-      <a href="index.html" class="colorMain">
-        <i class="fa-solid fa-dumbbell fa-3x colorMain"></i>
-        <h2>Let's Shred Together</h2>
-      </a>
-    </section>
-    <section class="past-conferences">
-      <h2>See The Past BB Conferences</h2>
-      <div class="conference-images">
-        <img src="images/greene.jpg" alt="kai greene">
-        <img src="images/seid.jpg" alt="Jeff Seid">
-      </div>
-    </section>
-    <footer>
-      <div class="footer-logo">
+      <h2 class="colorMain">The "BIGGEST" Bodybuilding Conference Logo</h2>
+      <hr class="about-hr">
+      <p class="colorMain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error fuga dignissimos blanditiis, sint iste quibusdam eveniet dolores provident veniam harum quia id nobis cupiditate illum voluptatibus adipisci. Deleniti, consequatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa animi dolores, laboriosam sit error odit blanditiis ipsam soluta atque quasi tempore maiores optio, quidem esse. Quos, aut tempora? Omnis, quibusdam?</p>
+      <div class="symbol">
         <a href="index.html" class="colorMain">
           <i class="fa-solid fa-dumbbell fa-3x colorMain"></i>
           <h2>Let's Shred Together</h2>
         </a>
       </div>
-      <div class="footer-info">
-        <p class="colorMain">2022 Biggest Bodybuilding festival. Some rights reserved.</p>
-        <p class="colorMain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore quae neque facilis tempore in autem fugiat atque at cum vel, saepe vero quos quam quo consequatur esse consequuntur</p>
+    </section>
+    <section class="past-conferences">
+      <h2 class="colorMain">See The Past BB Conferences</h2>
+      <hr class="about-hr">
+      <p class="colorMain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi asperiores quae accusamus in temporibus harum, eveniet tempore iste vero ipsum 
+      <div class="conference-images">
+        <div class="conference-image-1">
+          <div class="one">
+            <div class="colorWhite">2020</div>
+            <p class="colorWhite">BB Biggest Fest in San Francisco</p>
+          </div>
+        </div>
+        <div class="conference-image-2">
+          <div class="two">
+            <div class="colorWhite">2018</div>
+            <p class="colorWhite">BB Biggest Fest in Singapur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners-section-about">
+      <div class="partners-container">
+        <h2>Partner</h2>
+        <hr class="hr1">
+        <ul class="partners">
+          <li>
+            <a href="#">
+              Mozilla
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Google
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              IFBB
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              NPC
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Mr.Olympia
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer-about">
+      <div class="about-footer-logo">
+        <a href="index.html" class="colorMain">
+          <i class="fa-solid fa-dumbbell fa-3x colorMain"></i>
+          <h2>Let's Shred Together</h2>
+        </a>
+      </div>
+      <div class="about-footer-info">
+        <p id="about-mobile-visible-p" class="colorMain">2022 Biggest Bodybuilding festival. Some rights reserved.</p>
+        <p id="about-mobile-invisible-p" class="colorMain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore quae neque facilis tempore in autem fugiat atque at cum vel, saepe vero quos quam quo consequatur esse consequuntur</p>
       </div>
     </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

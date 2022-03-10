@@ -1,0 +1,122 @@
+/* Intro */
+.intro-about {
+  padding: 20% 4%;
+}
+
+.intro-about h1 {
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.intro-about hr {
+  display: none;
+}
+
+.intro-about h2 {
+  width: 100%;
+  font-size: .8em;
+  text-align: center;
+}
+
+.about-intro-small-title {
+  display: block;
+  border: none;
+  font-weight: 400;
+  margin-bottom: 1%;
+  border: none;
+}
+
+.intro-paragraph-about {
+  width: auto;
+}
+
+/* Logo */
+.logo {
+  padding: 1% 5%;
+}
+
+.logo p {
+  width: 100%;
+}
+
+.about-hr {
+  width: 2em;
+}
+
+/* Past conferences */
+.past-conferences {
+  padding: 1% 5%;
+}
+.past-conferences h2 {
+  font-size: 24px;
+}
+
+.past-conferences p {
+  width: auto;
+}
+
+.conference-images {
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 1em;
+  height: auto;
+  width: 100%;
+}
+.conference-image-2,
+.conference-image-1 {
+  height: 300px;
+}
+
+.conference-image-1 .one div {
+  font-size: 24px;
+}
+
+.conference-image-1 .one p {
+  font-size: 18px;
+}
+
+.conference-image-2 .two div {
+  font-size: 24px;
+}
+
+.conference-image-2 .two p {
+  font-size: 18px;
+}
+/* partners */
+.partners-section-about {
+  display: block;
+}
+
+/* footer */
+.footer-about {
+  background-color: #fff;
+}
+
+.about-footer-logo a {
+  font-size: 14px;
+}
+
+.about-footer-logo a h2 {
+  font-size: 14px;
+  color: #272a31;
+}
+
+.about-footer-logo a i {
+  margin-right: 3px;
+  color: #272a31;
+  width: min-content;
+}
+
+.about-footer-info {
+  width: 50%
+}
+
+#about-mobile-invisible-p {
+  display: none;
+}
+
+#about-mobile-visible-p {
+  font-size: 10px;
+  color: #272a31;
+  width: 100%;
+}

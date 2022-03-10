@@ -52,16 +52,6 @@ li {
   display: none;
 }
 
-/* .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-} */
-
 .intro {
   background-image: url('images/intro-bg.jpg');
   background-repeat: no-repeat;
@@ -180,8 +170,10 @@ li {
 }
 
 .hr1 {
-  border:1px solid #ec5242;
+  background: #ec5242;
+  height: 1px;
   width: 10%;
+  border: none;
 }
 
 .mainprogram-bottom-title,
@@ -310,6 +302,23 @@ footer {
   align-items: center;
 }
 
+#footer-invisible-p {
+  display: none;
+}
+
+.footer-info p {
+  width: 90%;
+  font-size: 10px
+}
+
+.footer-logo a {
+  font-size: 14px;
+}
+
+.footer-logo a i {
+  margin-right: 3px;
+}
+
 @media (min-width: 768px) {
 
 ul {
@@ -416,7 +425,7 @@ ul {
 /* Main program section */
 .programs-container {
   display: flex;
-  gap: 1%;
+  gap: 0.8%;
   justify-content: center;
 }
 
@@ -518,6 +527,234 @@ article:hover {
   font-size: 2em;
 }
 
-/* Footer */
+/* About Page */
 
+
+/* Footer */
+#footer-invisible-p {
+  display: block;
+}
+
+
+
+.footer-logo a h2 {
+  width: 40%;
+  margin-left: 10px;
+}
+
+.footer-info {
+  width: 20%;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+}
+
+/* About Page ------->*/
+/* Intro */
+.intro-about {
+  margin: auto;
+  background-image: url('images/intro-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.about-intro-small-title {
+  display: none;
+}
+
+.intro-about h1 {
+  text-align: center;
+  font-size: 2.6vw;
+  margin: auto;
+  width: 50%;
+  color: #ec5242;
+  margin-bottom: 5%;
+}
+
+.intro-paragraph-about {
+  margin: 5% auto;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  width: 40%;
+  text-align: center;
+  padding: 1% 3%;
+}
+
+.intro-about h2 {
+  font-weight: 400;
+}
+
+#mail {
+  border-bottom: 1px solid #272a31;
+  width: fit-content;
+}
+
+/* about Logo */
+.logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.logo h2 {
+  font-weight: 500;
+}
+
+.about-hr {
+  width: 2%;
+  background: #ec5242;
+  border: none;
+  height: 1px;
+}
+
+.logo p {
+  width: 50%;
+}
+
+.symbol {
+  margin: 3% auto;
+}
+
+.symbol a {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(211, 211, 211);
+  justify-content: center;
+}
+
+.symbol a h2 {
+  width: 50%;
+}
+
+.symbol a i {
+  width: min-content;
+  margin: 0;
+}
+
+/* about Past conferences */
+.past-conferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.past-conferences h2 {
+  font-weight: 400;
+  font-size: 1.8vw;
+}
+
+.past-conferences p {
+  width: 50%;
+  text-align: center;
+}
+
+.conference-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  height: 300px;
+}
+
+.conference-image-1 {
+  background: linear-gradient(#dd695c93, #b9615794), url(./images/greene.jpg) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.conference-image-1 .one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  height: 100%;
+}
+
+.conference-image-1 .one div {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.conference-image-1 .one p {
+  font-size: 1vw;
+  width: 100%;
+}
+
+.conference-image-2 {
+  background: linear-gradient(to bottom, #e0857a93, #ec534294), url(./images/seid.jpg) center center/cover;
+}
+
+.conference-image-2 .two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  height: 100%;
+}
+
+.conference-image-2 .two div {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.conference-image-2 .two p {
+  font-size: 1vw;
+  width: 100%;
+}
+
+/* about Partners */
+.partners-section-about {
+  display: none;
+}
+
+/*  about footer */
+.footer-about {
+  background-color: #272a31;
+  justify-content: center;
+  display: flex;
+}
+
+.about-footer-logo a h2 {
+  width: 50%;
+  color: #fff;
+}
+
+.about-footer-info {
+  width: 20%;
+}
+
+.about-footer-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.about-footer-logo a i {
+  width: min-content;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#about-mobile-invisible-p {
+  display: block;
+  color: #fff;
+}
+
+#about-mobile-visible-p {
+  color: #fff;
+  width: fit-content;
+  font-size: 18px;
 }
