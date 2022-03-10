@@ -5,6 +5,9 @@
 > This project's topic is personalized and it is about bodybuilding conference.
 > The project's design followed Cindy Shin's [template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
+![Desktop Version](images/Desktopscreen.jpg)
+![Mobile Version](images/mobilescreen.jpg)
+
 ## Built With
 
 - HTML5
