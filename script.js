@@ -1,12 +1,10 @@
 // Menubar icon
-const menuBar = document.querySelector('.menu-bar');3
+const menuBar = document.querySelector('.menu-bar');
 const mobileMenu = document.querySelector('.mobile-menu');
 menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('change');
   mobileMenu.classList.toggle('show');
 });
-
-  
 
 // Guests
 const guests = [
@@ -45,8 +43,8 @@ const guests = [
     career: 'Fitness Model and bodybuilder',
     description: 'Jeremy Buendia has been competing professionally within the International Federation of Bodybuilding and Fitness (IFBB) since 2013, where he placed 2nd in the Mr. Olympia Mens Physique class. He subsequently earned the Mens Physique Olympia title in 2014, 2015, 2016, and 2017.',
     image: 'images/buendia.jpg',
-  }
-]
+  },
+];
 
 function guestsCards(info) {
   return `<div class='guest'>
