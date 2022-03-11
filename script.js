@@ -6,7 +6,7 @@ menuBar.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
   if (menuBar.classList.contains('menu-bar-fix')) {
     menuBar.classList.remove('menu-bar-fix');
-  }else {
+  } else {
     menuBar.classList.add('menu-bar-fix');
   }
 });
