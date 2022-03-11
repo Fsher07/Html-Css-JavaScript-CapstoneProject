@@ -33,6 +33,12 @@ li {
   list-style: none;
 }
 
+:root {
+  --color-3: #ec5242;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
 .colorWhite {
   color: #fff;
 }
@@ -395,6 +401,21 @@ footer {
     font-size: 2.2vw;
     width: 60%;
     margin-top: 1px;
+    background:
+    linear-gradient(
+      219deg,
+      var(--color-3) 40%,
+      var(--color-3) 59%,
+      transparent 59%,
+      transparent 60%,
+      var(--color-4) 60%,
+      var(--color-4) 79%,
+      transparent 79%,
+      transparent 80%,
+      var(--color-5) 80%
+    );
+  -webkit-background-clip: text;
+  color: transparent;
   }
 
   #intro-paragraph {
