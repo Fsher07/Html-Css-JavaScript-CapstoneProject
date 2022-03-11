@@ -99,13 +99,13 @@ li {
   animation: slideMe 0.2s ease-in;
 }
 
-@keyframes slideOut {
+@keyframes slideMe {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
 }
 
