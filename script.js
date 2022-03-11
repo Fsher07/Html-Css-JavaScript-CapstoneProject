@@ -4,6 +4,11 @@ const mobileMenu = document.querySelector('.mobile-menu');
 menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('change');
   mobileMenu.classList.toggle('show');
+  if (menuBar.classList.contains('menu-bar-fix')) {
+    menuBar.classList.remove('menu-bar-fix');
+  }else {
+    menuBar.classList.add('menu-bar-fix');
+  }
 });
 
 // Guests
@@ -11,7 +16,7 @@ const guests = [
   {
     name: 'Ronnie Coleman',
     career: 'Professional Bodybuilder',
-    description: 'Ronnie Dean Coleman (born May 13, 1964) is an American retired professional bodybuilder. The winner of the Mr. Olympia title for eight consecutive years, he is regarded as one of the greatest bodybuilders of all time. Alongside his eight Mr. Olympia wins,',
+    description: 'Ronnie Dean Coleman (born May 13, 1964) is an American retired professional bodybuilder. The winner of the Mr. Olympia title for eight consecutive years, he is regarded as one of the greatest bodybuilders',
     image: 'images/coleman.jpg',
   },
   {
@@ -23,13 +28,13 @@ const guests = [
   {
     name: 'Phil Heath',
     career: 'Professional Bodybuilder, wrestler',
-    description: 'Phillip Jerrod Heath (born December 18, 1979) is an American IFBB professional bodybuilder. He is a seven-time Mr. Olympia winner, having won the competition every year from 2011 to 2017. His latest victory tied him with Arnold Schwarzenegger for the joint-second number of all-time',
+    description: 'Phillip Jerrod Heath (born December 18, 1979) is an American IFBB professional bodybuilder. He is a seven-time Mr. Olympia winner, having won the competition every year from 2011 to 2017. His latest victory ',
     image: 'images/heath.jpg',
   },
   {
     name: 'Kai Greene',
     career: 'Professional bodybuiler, artist and actor',
-    description: 'Leslie Kai Greene (born July 12, 1975), better known as Kai Greene or Kai L. Greene, is an American personal trainer, artist, actor, and retired professional bodybuilder. He came in second place at the 2012, 2013, and 2014 editions of the IFBBs Mr. Olympia competition and has not competed in it since, though he never formally announced his retirement.',
+    description: 'Leslie Kai Greene (born July 12, 1975), better known as Kai Greene or Kai L. Greene, is an American personal trainer, artist, actor, and retired professional bodybuilder. He came in second place at the ',
     image: 'images/greene.jpg',
   },
   {
@@ -41,13 +46,13 @@ const guests = [
   {
     name: 'Jeremy Buendia',
     career: 'Fitness Model and bodybuilder',
-    description: 'Jeremy Buendia has been competing professionally within the International Federation of Bodybuilding and Fitness (IFBB) since 2013, where he placed 2nd in the Mr. Olympia Mens Physique class. He subsequently earned the Mens Physique Olympia title in 2014, 2015, 2016, and 2017.',
+    description: 'Jeremy Buendia has been competing professionally within the International Federation of Bodybuilding and Fitness (IFBB) since 2013, where he placed 2nd in the Mr. Olympia Mens Physique class. He ',
     image: 'images/buendia.jpg',
   },
 ];
 
 function guestsCards(info) {
-  return `<div class='guest'>
+  return `<article class='guest'>
   <div class='img-container'>
     <img src="${info.image}" alt='guest-image'></img>
   </div>
@@ -57,7 +62,7 @@ function guestsCards(info) {
     <hr align='left'>
     <p class='description'>${info.description}</p>
   </div>
-</div>`;
+</article>`;
 }
 
 const guestCardsContainer = document.querySelector('.guests-container');

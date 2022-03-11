@@ -16,8 +16,8 @@
 
 ## Live Demo (if available)
 
-> Project [Live Demo Link](https://livedemo.com)
-> Video recording [Live Demo Link](https://livedemo.com)
+> Project [Live Demo Link](https://fsher07.github.io/Html-Css-JavaScript-CapstoneProject/)
+> Video recording [Live Demo Link](https://www.loom.com/share/865567aa244145afbc24b5f67de12032)
 
 ## Getting Started
 
